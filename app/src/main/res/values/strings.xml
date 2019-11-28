@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SmapleProcess</string>
+
+    <string name="settings">Settings</string>
+    <string name="settings_u"><u><b>Settings</b></u></string>
+    <string name="process">Process</string>
+    <string name="process_u"><u><b>Process</b></u></string>
+
+    //Settings fragment
+    //IP
+    <string name="ip_input_label_settings">Enter IP:</string>
+    <string name="ip_input_default_text">127.0.0.1</string>
+    <string name="ping_result_pinging_text">...</string>
+    <string name="ping_result_not_reachable_text">Not reachable</string>
+    <string name="ping_result_reachable_text">Reachable</string>
+
+    //port
+    <string name="port_input_label_settings">Enter port:</string>
+    <string name="port_input_default_text">"502"</string>
+
+    //buttons
+    <string name="ping_ip_button_text">PING</string>
+    <string name="save_setting_button_text">Save settings</string>
+
+    //Device addresses
+    <string name="device_SW_addr_label">Status word register:</string>
+    <string name="device_SW_addr_default_text">1</string>
+
+    <string name="device_CW_addr_label">Control word register:</string>
+    <string name="device_CW_addr_default_text">2</string>
+
+
+    //Process fragment
+    //buttons
+    <string name="read_once_button_text">Read data</string>
+    <string name="read_cycle_button_text">Cycle read</string>
+    <string name="write_data_to_process_button_text">Write</string>
+    <string name="read_cycle_indication_text_ON"><b>Read ON</b></string>
+    <string name="read_cycle_indication_text_OFF"><b>Read OFF</b></string>
+
+    //Status word
+    <string name="device_SW_reg_val_label">Status word:</string>
+    <string name="device_SW_reg_val_default_text">0</string>
+
+    //Control word
+    <string name="device_CW_reg_val_label">Control word:</string>
+    <string name="device_CW_reg_val_default_text">0</string>
+
+</resources>

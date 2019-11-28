@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sampleprocess.ProcessFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/read_once_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/read_once_button_text"
+            app:layout_constraintEnd_toStartOf="@+id/cycle_read_button"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/read_once_button_text" />
+
+        <Button
+            android:id="@+id/cycle_read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/read_cycle_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/read_cycle_button_text" />
+
+        <TextView
+            android:id="@+id/process_SW_label_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/device_SW_reg_val_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/read_once_button"
+            tools:text="@string/device_SW_reg_val_label" />
+
+        <EditText
+            android:id="@+id/process_SW_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/device_SW_reg_val_default_text"
+            app:layout_constraintStart_toStartOf="@+id/process_SW_label_textView"
+            app:layout_constraintTop_toBottomOf="@+id/process_SW_label_textView" />
+
+        <TextView
+            android:id="@+id/process_CW_label_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/device_CW_reg_val_label"
+            app:layout_constraintStart_toStartOf="@+id/process_SW_editText"
+            app:layout_constraintTop_toBottomOf="@+id/process_SW_editText"
+            tools:text="@string/device_CW_reg_val_label" />
+
+        <EditText
+            android:id="@+id/process_CW_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/device_CW_reg_val_default_text"
+            app:layout_constraintStart_toStartOf="@+id/process_CW_label_textView"
+            app:layout_constraintTop_toBottomOf="@+id/process_CW_label_textView"
+            tools:text="@string/device_CW_reg_val_default_text" />
+
+        <Button
+            android:id="@+id/write_data_to_process_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/write_data_to_process_button_text"
+            app:layout_constraintBottom_toBottomOf="@+id/process_CW_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/process_CW_editText"
+            app:layout_constraintTop_toTopOf="@+id/process_CW_editText" />
+
+        <TextView
+            android:id="@+id/cycle_read_indication_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_cycle_indication_text_OFF"
+            app:layout_constraintEnd_toEndOf="@+id/cycle_read_button"
+            app:layout_constraintTop_toBottomOf="@+id/cycle_read_button"
+            tools:text="@string/read_cycle_indication_text_OFF" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
